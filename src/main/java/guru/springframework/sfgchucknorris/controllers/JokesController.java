@@ -16,9 +16,9 @@ public class JokesController
     }
 
     @RequestMapping({"/",""})
-    public String getQuote(Model model) //return the view name
+    public String getJoke(Model model) //return the view name
     {
-        model.addAttribute("Joke",jokesQuoteService.getQuote());
+        model.addAttribute("joke",jokesQuoteService.getQuote());
         return "index";
     }
 }
